@@ -1,12 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #002c73; /* Azul institucional dominante */
-  --color-secondary: #ffd200; /* Amarelo vibrante para contrastes */
-  --color-accent: #0063c6; /* Azul claro para botões e links */
-  --color-dark: #0a1a33; /* Fundo escuro usado no rodapé */
-  --color-light: #f4f6fa; /* Fundo claro das seções */
-  --color-text: #1a1a1a; /* Texto padrão */
-  --color-text-light: #ffffff; /* Texto claro sobre fundo escuro */
+  --color-primary: #002c73;
+  --color-secondary: #ffd200;
+  --color-accent: #0063c6;
+  --color-dark: #0a1a33;
+  --color-light: #f4f6fa;
+  --color-text: #1a1a1a;
+  --color-text-light: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply font-sans;
+  font-family: var(--font-roboto);
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
